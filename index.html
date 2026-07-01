@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIDDHIVINAYAK INFRA | Premium Logistics & Transportation</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS Modules -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="text-gray-800 antialiased selection:bg-secondary selection:text-white">
+
+    <!-- Top Contact Bar -->
+    <div class="top-bar py-2 z-50 relative bg-[#9E1B22]">
+        <div class="container mx-auto px-4 lg:px-8 flex flex-col md:flex-row justify-between items-center text-[13px] font-medium tracking-wide">
+            <div class="flex space-x-6 items-center">
+                <a href="tel:9820869247" class="flex items-center hover:text-gray-200 transition">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg> 
+                    +91 9820869247 / 7738822231 / 8879022249
+                </a>
+                <a href="mailto:infrasiddhivinayak@gmail.com" class="flex items-center hover:text-gray-200 transition">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg> 
+                    infrasiddhivinayak@gmail.com | duttonline@gmail.com
+                </a>
+            </div>
+            <div class="flex space-x-6 items-center mt-2 md:mt-0">
+                <span class="flex items-center">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 
+                    Mon - Sat: 9:00 AM - 7:00 PM
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Navbar -->
+    <nav id="navbar" class="w-full z-40 transition-all duration-400 py-4 bg-white sticky top-0 border-b border-gray-100 shadow-sm">
+        <div class="container mx-auto px-4 lg:px-8 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="assets/logo/logo.png" alt="Siddhivinayak Logistics Solutions" class="h-12">
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="index.html" class="nav-link active">HOME</a>
+                <a href="about.html" class="nav-link flex items-center">ABOUT US <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></a>
+                <a href="services.html" class="nav-link flex items-center">SERVICES <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></a>
+                <a href="fleet.html" class="nav-link flex items-center">FLEET <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></a>
+                <a href="projects.html" class="nav-link">PROJECTS</a>
+                <a href="contact.html" class="nav-link">CONTACT</a>
+                <a href="contact.html" class="btn-primary">GET A QUOTE</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="lg:hidden text-primary hover:text-secondary"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+        </div>
+
+        <!-- Mobile Menu Container (Hidden by default) -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white w-full border-t border-gray-100 absolute top-full left-0 shadow-2xl pb-4 flex-col px-6 py-4 space-y-4">
+            <a href="index.html" class="text-primary font-bold tracking-wide hover:text-secondary transition text-lg border-b border-gray-100 pb-2">HOME</a>
+            <a href="about.html" class="text-primary font-bold tracking-wide hover:text-secondary transition text-lg border-b border-gray-100 pb-2">ABOUT US</a>
+            <a href="services.html" class="text-primary font-bold tracking-wide hover:text-secondary transition text-lg border-b border-gray-100 pb-2">SERVICES</a>
+            <a href="fleet.html" class="text-primary font-bold tracking-wide hover:text-secondary transition text-lg border-b border-gray-100 pb-2">FLEET</a>
+            <a href="projects.html" class="text-primary font-bold tracking-wide hover:text-secondary transition text-lg border-b border-gray-100 pb-2">PROJECTS</a>
+            <a href="contact.html" class="text-primary font-bold tracking-wide hover:text-secondary transition text-lg border-b border-gray-100 pb-2">CONTACT</a>
+            <a href="contact.html" class="bg-secondary text-white text-center rounded py-3 font-bold uppercase mt-2">GET A QUOTE</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section relative overflow-hidden bg-dark h-[80vh] min-h-[600px] flex items-center">
+        <!-- Full Background Images & Text (Slider) -->
+        <div class="absolute inset-0 z-0" id="hero-slider">
+            <!-- Slide 1 -->
+            <div class="hero-slide absolute inset-0 w-full h-full opacity-90 transition-opacity duration-1000 z-10 flex flex-col justify-center">
+                <img src="images/hero2.png" alt="Heavy Logistics Fleet" class="absolute inset-0 w-full h-full object-cover z-0">
+                <div class="absolute inset-0 bg-gradient-to-r from-[#03152F]/95 via-[#03152F]/60 to-transparent z-10"></div>
+                <div class="container mx-auto px-4 z-20 relative text-left -mt-16" data-aos="fade-right">
+                    <div class="max-w-4xl">
+                        <p class="text-red-500 font-bold tracking-widest text-sm mb-4 uppercase drop-shadow">SAFE &bull; RELIABLE &bull; TIMELY DELIVERY</p>
+                        <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-black font-heading leading-tight mb-2 tracking-wide drop-shadow-lg uppercase">
+                            SIDDHIVINAYAK INFRA
+                        </h1>
+                        <h3 class="text-[#D72638] text-2xl md:text-3xl lg:text-4xl font-bold font-heading leading-tight mb-6 tracking-wide drop-shadow-lg">
+                            Transportation and logistics provider
+                        </h3>
+                        <p class="text-gray-200 text-sm md:text-base max-w-2xl mb-8 leading-relaxed font-medium">Specialized in Railway Logistics, Heavy Cargo, ODC Transport, Construction Logistics & Industrial Transport Services.</p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="#" class="bg-[#D72638] hover:bg-red-700 text-white font-bold py-3 px-6 rounded-sm transition shadow-lg text-xs md:text-sm tracking-wider uppercase flex items-center">
+                                EXPLORE SERVICES <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            </a>
+                            <a href="#" class="border-2 border-gray-400 hover:border-white hover:bg-white hover:text-dark text-white font-bold py-3 px-8 rounded-sm transition shadow-lg text-xs md:text-sm tracking-wider uppercase">
+                                OUR FLEET
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="hero-slide absolute inset-0 w-full h-full opacity-0 transition-opacity duration-1000 z-0 flex flex-col justify-center">
+                <img src="images/hero3.jpg" alt="Truck Logistics" class="absolute inset-0 w-full h-full object-cover z-0">
+                <div class="absolute inset-0 bg-gradient-to-r from-[#03152F]/95 via-[#03152F]/60 to-transparent z-10"></div>
+                <div class="container mx-auto px-4 z-20 relative text-left -mt-16">
+                    <div class="max-w-4xl">
+                        <p class="text-red-500 font-bold tracking-widest text-sm mb-4 uppercase drop-shadow">PAN INDIA NETWORK &bull; MODERN FLEET</p>
+                        <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-black font-heading leading-tight mb-2 tracking-wide drop-shadow-lg uppercase">
+                            YOUR PARTNER IN<br>HEAVY CARGO
+                        </h1>
+                        <h2 class="text-[#D72638] text-3xl md:text-5xl lg:text-6xl font-black font-heading leading-tight mb-6 tracking-wide drop-shadow-lg uppercase">
+                            LOGISTICS
+                        </h2>
+                        <p class="text-gray-200 text-sm md:text-base max-w-2xl mb-8 leading-relaxed font-medium">Delivering complex logistics and heavy freight forwarding solutions with complete safety and efficiency.</p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="#" class="bg-[#D72638] hover:bg-red-700 text-white font-bold py-3 px-6 rounded-sm transition shadow-lg text-xs md:text-sm tracking-wider uppercase flex items-center">
+                                EXPLORE SERVICES <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            </a>
+                            <a href="#" class="border-2 border-gray-400 hover:border-white hover:bg-white hover:text-dark text-white font-bold py-3 px-8 rounded-sm transition shadow-lg text-xs md:text-sm tracking-wider uppercase">
+                                OUR FLEET
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="hero-slide absolute inset-0 w-full h-full opacity-0 transition-opacity duration-1000 z-0 flex flex-col justify-center">
+                <img src="images/hero4.png" alt="Port Logistics" class="absolute inset-0 w-full h-full object-cover z-0">
+                <div class="absolute inset-0 bg-gradient-to-r from-[#03152F]/95 via-[#03152F]/60 to-transparent z-10"></div>
+                <div class="container mx-auto px-4 z-20 relative text-left -mt-16">
+                    <div class="max-w-4xl">
+                        <p class="text-red-500 font-bold tracking-widest text-sm mb-4 uppercase drop-shadow">GLOBAL STANDARDS &bull; LOCAL EXPERTISE</p>
+                        <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-black font-heading leading-tight mb-2 tracking-wide drop-shadow-lg uppercase">
+                            END TO END<br>PORT LOGISTICS
+                        </h1>
+                        <h2 class="text-[#D72638] text-3xl md:text-5xl lg:text-6xl font-black font-heading leading-tight mb-6 tracking-wide drop-shadow-lg uppercase">
+                            SOLUTIONS
+                        </h2>
+                        <p class="text-gray-200 text-sm md:text-base max-w-2xl mb-8 leading-relaxed font-medium">Seamless port-to-door delivery operations ensuring zero delay for critical infrastructure imports.</p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="#" class="bg-[#D72638] hover:bg-red-700 text-white font-bold py-3 px-6 rounded-sm transition shadow-lg text-xs md:text-sm tracking-wider uppercase flex items-center">
+                                EXPLORE SERVICES <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            </a>
+                            <a href="#" class="border-2 border-gray-400 hover:border-white hover:bg-white hover:text-dark text-white font-bold py-3 px-8 rounded-sm transition shadow-lg text-xs md:text-sm tracking-wider uppercase">
+                                OUR FLEET
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="hero-slide absolute inset-0 w-full h-full opacity-0 transition-opacity duration-1000 z-0 flex flex-col justify-center">
+                <img src="images/hero (2).png" alt="Construction Logistics" class="absolute inset-0 w-full h-full object-cover z-0">
+                <div class="absolute inset-0 bg-gradient-to-r from-[#03152F]/95 via-[#03152F]/60 to-transparent z-10"></div>
+                <div class="container mx-auto px-4 z-20 relative text-left -mt-16">
+                    <div class="max-w-4xl">
+                        <p class="text-red-500 font-bold tracking-widest text-sm mb-4 uppercase drop-shadow">HEAVY MACHINERY &bull; SITE SUPPORT</p>
+                        <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-black font-heading leading-tight mb-2 tracking-wide drop-shadow-lg uppercase">
+                            EXPERT<br>EARTH MOVING
+                        </h1>
+                        <h2 class="text-[#D72638] text-3xl md:text-5xl lg:text-6xl font-black font-heading leading-tight mb-6 tracking-wide drop-shadow-lg uppercase">
+                            & CONSTRUCTION
+                        </h2>
+                        <p class="text-gray-200 text-sm md:text-base max-w-2xl mb-8 leading-relaxed font-medium">Equipped with state-of-the-art cranes and earthmovers to handle massive infrastructure projects.</p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="#" class="bg-[#D72638] hover:bg-red-700 text-white font-bold py-3 px-6 rounded-sm transition shadow-lg text-xs md:text-sm tracking-wider uppercase flex items-center">
+                                EXPLORE SERVICES <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            </a>
+                            <a href="#" class="border-2 border-gray-400 hover:border-white hover:bg-white hover:text-dark text-white font-bold py-3 px-8 rounded-sm transition shadow-lg text-xs md:text-sm tracking-wider uppercase">
+                                OUR FLEET
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        
+        <!-- Slider Navigation Dots -->
+        <div class="absolute bottom-24 md:bottom-32 left-1/2 transform -translate-x-1/2 z-40 flex space-x-3" id="hero-dots">
+            <button class="hero-dot w-2 h-2 md:w-3 md:h-3 rounded-full bg-white border border-white opacity-100 transition-opacity"></button>
+            <button class="hero-dot w-2 h-2 md:w-3 md:h-3 rounded-full bg-transparent border border-white opacity-60 hover:opacity-100 transition-opacity"></button>
+            <button class="hero-dot w-2 h-2 md:w-3 md:h-3 rounded-full bg-transparent border border-white opacity-60 hover:opacity-100 transition-opacity"></button>
+            <button class="hero-dot w-2 h-2 md:w-3 md:h-3 rounded-full bg-transparent border border-white opacity-60 hover:opacity-100 transition-opacity"></button>
+        </div>
+    </header>
+
+
+
+    <!-- Company Introduction Section -->
+    <section class="py-24 bg-white relative">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <!-- Left Content -->
+                <div class="lg:w-1/2 text-left" data-aos="fade-up">
+                    <h5 class="text-secondary font-bold text-xs tracking-wider uppercase mb-3 bg-secondary/10 inline-block px-3 py-1 rounded text-red-700 border border-red-200 shadow-sm">COMPANY INTRODUCTION</h5>
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-heading font-black mb-5 tracking-wide drop-shadow-md uppercase"><span class="text-primary">SIDDHIVINAYAK</span> <span class="text-secondary">INFRA</span></h2>
+                    <p class="text-gray-600 mb-4 leading-relaxed text-sm">
+                        We are a reliable Transportation & Logistics Service Provider offering efficient and cost-effective logistics solutions across India. We specialize in <span class="font-bold text-white bg-[#03152F] px-2 py-0.5 rounded shadow-sm inline-block mb-1 mt-1 text-xs">Heavy Cargo</span>, <span class="font-bold text-white bg-[#03152F] px-2 py-0.5 rounded shadow-sm inline-block mb-1 text-xs">Railway Logistics</span>, <span class="font-bold text-white bg-[#03152F] px-2 py-0.5 rounded shadow-sm inline-block mb-1 text-xs">ODC Transport</span>, <span class="font-bold text-white bg-[#03152F] px-2 py-0.5 rounded shadow-sm inline-block mb-1 text-xs">Construction Logistics</span>, <span class="font-bold text-white bg-[#03152F] px-2 py-0.5 rounded shadow-sm inline-block mb-1 text-xs">Industrial Logistics</span>, <span class="font-bold text-white bg-[#03152F] px-2 py-0.5 rounded shadow-sm inline-block mb-1 text-xs">Earth Moving Work</span> & <span class="font-bold text-white bg-[#03152F] px-2 py-0.5 rounded shadow-sm inline-block mb-1 text-xs">Crane Services</span>.
+                    </p>
+                    <p class="text-gray-600 mb-4 leading-relaxed text-sm">
+                        <strong>We provide vehicles like:</strong> Pickup, 3 wheeler, Trucks, Trailors, Chota Hath (800 kg), Containers body single XL and Multi XL, open truck 32ft, 20ft / Tempo Truck, 14 ft, 17 ft, 19 ft / Trailor 20ft, 40ft containers / ODC trailor / Open Truck 20ft, 32ft / Tauras vehicles 25 mt, 30 mt, 35 mt & extra etc all over India.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed text-sm">
+                        We are currently working with many companies and we would like to work with you also. Our new branch offices are opened in <strong>Surendranagar, Godhra, Vapi, Nagpur, Hyderabad</strong>. Our Head office is in <strong>Mumbai</strong>.
+                    </p>
+                    
+                    <br>
+                    <a href="#" class="btn-primary rounded text-xs py-3 px-8">READ MORE</a>
+                </div>
+
+                <!-- Right Images (3 Grid) -->
+                <div class="lg:w-1/2 grid grid-cols-2 gap-4" data-aos="zoom-in">
+                    <div class="col-span-1 row-span-2 rounded-lg overflow-hidden img-hover-zoom h-full min-h-[400px]">
+                        <img src="images/Containers_.jpg" alt="Forklift Loading Container" class="w-full h-full object-cover">
+                    </div>
+                    <div class="col-span-1 rounded-lg overflow-hidden img-hover-zoom h-[190px]">
+                        <img src="images/Cranes.png" alt="Crane Operation" class="w-full h-full object-cover">
+                    </div>
+                    <div class="col-span-1 rounded-lg overflow-hidden img-hover-zoom h-[190px]">
+                        <img src="images/Railway Lines.png" alt="Railway Tracks" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-gray-50 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-heading font-bold text-primary mb-6 inline-block border-b-2 border-secondary pb-2 uppercase tracking-wide">OUR SERVICES</h2>
+            
+            <p class="text-sm font-semibold text-gray-700 max-w-4xl mx-auto mb-10 leading-relaxed uppercase bg-gray-100 p-4 border-l-4 border-secondary rounded shadow-sm">
+                Any transportation inquiry related to RAILWAY SLEEPERS / RAIL LINES / LOOSE FITTINGS / CEMENT & IRON GIRDERS / OTHER MATERIALS (ODC work also) AND ALL POINT LOADING AND UNLOADING & EARTH-MOVING WORK / Crane, Trailors (including ODC trailers), Trucks, & Labour supply.
+            </p>
+
+            <div class="grid-5-cols mt-8 text-left">
+                <!-- Service 1 -->
+                <div class="bg-white rounded border border-gray-200 overflow-hidden shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-300" data-aos="flip-left" data-aos-delay="0">
+                    <img src="images/Railway Sleepera.png" alt="Railway Sleepers" class="w-full h-32 object-cover">
+                    <div class="p-4 text-center">
+                        <h4 class="font-bold text-xs text-primary font-heading uppercase leading-tight">Railway Sleepers Transport</h4>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-white rounded border border-gray-200 overflow-hidden shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-300" data-aos="flip-left" data-aos-delay="100">
+                    <img src="images/Railway Lines.png" alt="Rail Line Materials" class="w-full h-32 object-cover">
+                    <div class="p-4 text-center">
+                        <h4 class="font-bold text-xs text-primary font-heading uppercase leading-tight">Rail Line Materials</h4>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-white rounded border border-gray-200 overflow-hidden shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-300" data-aos="flip-left" data-aos-delay="200">
+                    <img src="images/Loose Fitings 1.png" alt="Loose Fittings" class="w-full h-32 object-cover">
+                    <div class="p-4 text-center">
+                        <h4 class="font-bold text-xs text-primary font-heading uppercase leading-tight">Loose Fittings</h4>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="bg-white rounded border border-gray-200 overflow-hidden shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-300" data-aos="flip-left" data-aos-delay="300">
+                    <img src="images/ODC(1).png" alt="ODC Cargo Handling" class="w-full h-32 object-cover">
+                    <div class="p-4 text-center">
+                        <h4 class="font-bold text-xs text-primary font-heading uppercase leading-tight">ODC Cargo Handling</h4>
+                    </div>
+                </div>
+                <!-- Service 5 -->
+                <div class="bg-white rounded border border-gray-200 overflow-hidden shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-300" data-aos="flip-left" data-aos-delay="400">
+                    <img src="images/Heavy Vehicles (25-25 T).png" alt="Heavy Cargo Transport" class="w-full h-32 object-cover">
+                    <div class="p-4 text-center">
+                        <h4 class="font-bold text-xs text-primary font-heading uppercase leading-tight">Heavy Cargo Transport</h4>
+                    </div>
+                </div>
+                <!-- Service 6 -->
+                <div class="bg-white rounded border border-gray-200 overflow-hidden shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-300" data-aos="flip-left" data-aos-delay="0">
+                    <img src="images/Construction_.png" alt="Earth Moving Work" class="w-full h-32 object-cover">
+                    <div class="p-4 text-center">
+                        <h4 class="font-bold text-xs text-primary font-heading uppercase leading-tight">Earth Moving Work</h4>
+                    </div>
+                </div>
+                <!-- Service 7 -->
+                <div class="bg-white rounded border border-gray-200 overflow-hidden shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-300" data-aos="flip-left" data-aos-delay="100">
+                    <img src="images/Cranes.png" alt="Crane Services" class="w-full h-32 object-cover">
+                    <div class="p-4 text-center">
+                        <h4 class="font-bold text-xs text-primary font-heading uppercase leading-tight">Crane Services</h4>
+                    </div>
+                </div>
+                <!-- Service 8 -->
+                <div class="bg-white rounded border border-gray-200 overflow-hidden shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-300" data-aos="flip-left" data-aos-delay="200">
+                    <img src="images/Containers_.png" alt="All Point Loading" class="w-full h-32 object-cover">
+                    <div class="p-4 text-center">
+                        <h4 class="font-bold text-xs text-primary font-heading uppercase leading-tight">All Point Loading & Unloading</h4>
+                    </div>
+                </div>
+                <!-- Service 9 -->
+                <div class="bg-white rounded border border-gray-200 overflow-hidden shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-300" data-aos="flip-left" data-aos-delay="300">
+                    <img src="images/Trucks.png" alt="Truck & Labour Supply" class="w-full h-32 object-cover">
+                    <div class="p-4 text-center">
+                        <h4 class="font-bold text-xs text-primary font-heading uppercase leading-tight">Truck & Labour Supply</h4>
+                    </div>
+                </div>
+                <!-- Service 10 -->
+                <div class="bg-white rounded border border-gray-200 overflow-hidden shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-300" data-aos="flip-left" data-aos-delay="400">
+                    <img src="images/Trucks Containers_.png" alt="Container Transport" class="w-full h-32 object-cover">
+                    <div class="p-4 text-center">
+                        <h4 class="font-bold text-xs text-primary font-heading uppercase leading-tight">Container Transport</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12">
+                <a href="#" class="btn-primary rounded text-xs py-3 px-8 tracking-wider">VIEW ALL SERVICES</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW Custom Railway Infrastructure Section -->
+    <section class="bg-[#03152F] text-white overflow-hidden flex flex-col lg:flex-row shadow-inner">
+        <!-- Left Content (Text) -->
+        <div class="lg:w-1/2 p-10 lg:p-16 flex flex-col justify-center" data-aos="fade-right">
+            <h5 class="text-secondary font-bold text-xs tracking-widest uppercase mb-3">RAILWAY LOGISTICS SPECIALIST</h5>
+            <h2 class="text-3xl md:text-5xl font-heading font-black mb-6 uppercase tracking-wide leading-tight drop-shadow">RAILWAY INFRASTRUCTURE<br>LOGISTICS</h2>
+            <p class="text-gray-300 mb-10 leading-relaxed text-sm md:text-base max-w-xl font-medium">
+                We provide end-to-end logistics support for railway infrastructure projects including sleepers, rails, fastenings, track components and other essential materials.
+            </p>
+            
+            <!-- 2 Column Checklist with Red Icons -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-4 mb-10 font-bold text-sm text-gray-200 tracking-wide">
+                <div class="flex items-center">
+                    <svg class="w-5 h-5 text-secondary mr-3 shrink-0" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="11"/><path d="M7 12l3 3 7-7" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/></svg>
+                    Railway Sleepers Transportation
+                </div>
+                <div class="flex items-center">
+                    <svg class="w-5 h-5 text-secondary mr-3 shrink-0" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="11"/><path d="M7 12l3 3 7-7" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/></svg>
+                    Steel Rails
+                </div>
+                <div class="flex items-center">
+                    <svg class="w-5 h-5 text-secondary mr-3 shrink-0" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="11"/><path d="M7 12l3 3 7-7" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/></svg>
+                    Rail Line Materials
+                </div>
+                <div class="flex items-center">
+                    <svg class="w-5 h-5 text-secondary mr-3 shrink-0" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="11"/><path d="M7 12l3 3 7-7" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/></svg>
+                    ODC Railway Equipment
+                </div>
+                <div class="flex items-center">
+                    <svg class="w-5 h-5 text-secondary mr-3 shrink-0" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="11"/><path d="M7 12l3 3 7-7" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/></svg>
+                    Loose Rail Fittings
+                </div>
+                <div class="flex items-center">
+                    <svg class="w-5 h-5 text-secondary mr-3 shrink-0" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="11"/><path d="M7 12l3 3 7-7" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/></svg>
+                    Track Construction Materials
+                </div>
+                <div class="flex items-center">
+                    <svg class="w-5 h-5 text-secondary mr-3 shrink-0" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="11"/><path d="M7 12l3 3 7-7" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/></svg>
+                    Track Components
+                </div>
+                <div class="flex items-center">
+                    <svg class="w-5 h-5 text-secondary mr-3 shrink-0" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="11"/><path d="M7 12l3 3 7-7" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/></svg>
+                    Timely & Safe Delivery
+                </div>
+            </div>
+            
+            <button class="bg-secondary hover:bg-red-700 text-white font-bold py-4 px-8 w-max rounded border border-red-600 transition shadow-lg text-sm uppercase">
+                VIEW RAILWAY PROJECTS
+            </button>
+        </div>
+        
+        <!-- Right Images (Edge-to-Edge Grid) -->
+        <div class="lg:w-1/2 flex gap-1 bg-black/20 p-2 lg:p-0 lg:pl-1" data-aos="fade-left">
+            <!-- Left Large Image -->
+            <div class="w-[60%] lg:w-[65%] h-[400px] lg:h-auto overflow-hidden rounded-md lg:rounded-l-lg lg:rounded-r-none border border-gray-700 shadow-2xl my-auto lg:my-0 lg:py-2">
+                <img src="images/railways_cons.png" alt="Railway Track Construction" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+            </div>
+            <!-- Right Stacked Images -->
+            <div class="w-[40%] lg:w-[35%] flex flex-col gap-1 lg:py-2">
+                <div class="flex-1 overflow-hidden rounded-md lg:rounded-l-lg lg:rounded-r-none border border-gray-700 shadow-xl">
+                    <img src="images/Railway Sleepers 2.png" alt="Railway Sleepers Stacked" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                </div>
+                <div class="flex-1 overflow-hidden rounded-md lg:rounded-l-lg lg:rounded-r-none border border-gray-700 shadow-xl">
+                    <img src="images/railways_cons2.png" alt="Railway Trains" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Fleet Section -->
+    <section class="py-24 bg-white text-center">
+        <div class="container mx-auto px-4 lg:px-8">
+            <h2 class="text-3xl font-heading font-bold text-primary mb-10 inline-block border-b-2 border-secondary pb-2 uppercase tracking-wide">OUR FLEET</h2>
+            
+            <!-- Tabs -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12">
+                <button class="fleet-tab bg-secondary text-white hover:bg-red-700 font-bold text-xs uppercase px-8 py-3 rounded border border-secondary transition-all shadow-md" data-filter="pickup">PICKUP</button>
+                <button class="fleet-tab bg-white text-primary hover:bg-secondary hover:text-white font-bold text-xs uppercase px-8 py-3 rounded border border-gray-200 hover:border-secondary transition-all shadow-sm" data-filter="trucks">TRUCKS</button>
+                <button class="fleet-tab bg-white text-primary hover:bg-secondary hover:text-white font-bold text-xs uppercase px-8 py-3 rounded border border-gray-200 hover:border-secondary transition-all shadow-sm" data-filter="trailers">TRAILERS</button>
+                <button class="fleet-tab bg-white text-primary hover:bg-secondary hover:text-white font-bold text-xs uppercase px-8 py-3 rounded border border-gray-200 hover:border-secondary transition-all shadow-sm" data-filter="odc">ODC</button>
+                <button class="fleet-tab bg-white text-primary hover:bg-secondary hover:text-white font-bold text-xs uppercase px-8 py-3 rounded border border-gray-200 hover:border-secondary transition-all shadow-sm" data-filter="heavy">HEAVY EQUIPMENT</button>
+            </div>
+
+            <!-- Fleet Grid -->
+            <div class="grid-5-cols text-center" data-aos="zoom-up">
+                <div class="fleet-item bg-gray-50 border border-gray-200 rounded overflow-hidden shadow-sm hover:shadow-lg transition" data-category="pickup">
+                    <img src="images/Chota Hath 1.png" alt="Pickup" class="w-full h-40 object-cover">
+                    <div class="p-4 bg-white">
+                        <h4 class="font-bold text-sm text-primary mb-1">Pickup / Chota Hath</h4>
+                        <p class="text-xs text-gray-500">Capacity: 800 Kg - 1.5 Ton</p>
+                    </div>
+                </div>
+                <div class="fleet-item bg-gray-50 border border-gray-200 rounded overflow-hidden shadow-sm hover:shadow-lg transition" data-category="pickup">
+                    <img src="images/Tempo Trucks.png" alt="3 Wheeler" class="w-full h-40 object-cover">
+                    <div class="p-4 bg-white">
+                        <h4 class="font-bold text-sm text-primary mb-1">3 Wheeler / Tempo</h4>
+                        <p class="text-xs text-gray-500">Capacity: 1 Ton</p>
+                    </div>
+                </div>
+                <div class="fleet-item bg-gray-50 border border-gray-200 rounded overflow-hidden shadow-sm hover:shadow-lg transition" data-category="trucks">
+                    <img src="images/Trucks.png" alt="14 Ft Truck" class="w-full h-40 object-cover">
+                    <div class="p-4 bg-white">
+                        <h4 class="font-bold text-sm text-primary mb-1">14 Ft / 17 Ft Truck</h4>
+                        <p class="text-xs text-gray-500">Medium Cargo</p>
+                    </div>
+                </div>
+                <div class="fleet-item bg-gray-50 border border-gray-200 rounded overflow-hidden shadow-sm hover:shadow-lg transition" data-category="trucks">
+                    <img src="images/Tauras Trucks.png" alt="17 Ft Truck" class="w-full h-40 object-cover">
+                    <div class="p-4 bg-white">
+                        <h4 class="font-bold text-sm text-primary mb-1">Tauras Vehicles</h4>
+                        <p class="text-xs text-gray-500">Capacity: 25 MT - 35 MT</p>
+                    </div>
+                </div>
+                <div class="fleet-item bg-gray-50 border border-gray-200 rounded overflow-hidden shadow-sm hover:shadow-lg transition" data-category="trucks">
+                    <img src="images/Open Truck (20-30 ft).png" alt="20 Ft Open Truck" class="w-full h-40 object-cover">
+                    <div class="p-4 bg-white">
+                        <h4 class="font-bold text-sm text-primary mb-1">20 Ft / 32 Ft Open Truck</h4>
+                        <p class="text-xs text-gray-500">Heavy Cargo</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12">
+                <a href="#" class="btn-primary rounded text-xs py-3 px-8 tracking-wider">VIEW FULL FLEET</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Projects Section -->
+    <section class="py-24 bg-gray-50 text-center">
+        <div class="container mx-auto px-4 lg:px-8">
+            <h2 class="text-3xl font-heading font-bold text-primary mb-10 inline-block border-b-2 border-secondary pb-2 uppercase tracking-wide">OUR PROJECTS</h2>
+            
+            <div class="flex flex-wrap justify-center gap-2 mb-12 border-b border-gray-200 pb-2">
+                <button class="project-tab bg-secondary text-white font-bold text-xs uppercase px-8 py-2 rounded-t-sm shadow-sm transition" data-filter="all">ALL</button>
+                <button class="project-tab bg-transparent text-primary hover:text-secondary font-bold text-xs uppercase px-8 py-2 rounded-t-sm transition" data-filter="railway">RAILWAY</button>
+                <button class="project-tab bg-transparent text-primary hover:text-secondary font-bold text-xs uppercase px-8 py-2 rounded-t-sm transition" data-filter="odc">ODC</button>
+                <button class="project-tab bg-transparent text-primary hover:text-secondary font-bold text-xs uppercase px-8 py-2 rounded-t-sm transition" data-filter="construction">CONSTRUCTION</button>
+                <button class="project-tab bg-transparent text-primary hover:text-secondary font-bold text-xs uppercase px-8 py-2 rounded-t-sm transition" data-filter="infrastructure">INFRASTRUCTURE</button>
+                <button class="project-tab bg-transparent text-primary hover:text-secondary font-bold text-xs uppercase px-8 py-2 rounded-t-sm transition" data-filter="heavy">HEAVY CARGO</button>
+            </div>
+
+            <div class="grid-4-cols text-left" data-aos="fade-up">
+                <div class="project-item" data-category="railway">
+                    <div class="rounded-lg overflow-hidden img-hover-zoom mb-4 shadow-md border border-gray-200">
+                        <img src="images/Railway Lines.png" alt="Railway Track Material" class="w-full h-48 object-cover">
+                    </div>
+                    <h4 class="font-bold text-primary text-sm font-heading">Railway Track Material Transportation</h4>
+                </div>
+                <div class="project-item" data-category="odc">
+                    <div class="rounded-lg overflow-hidden img-hover-zoom mb-4 shadow-md border border-gray-200">
+                        <img src="images/ODC.png" alt="ODC Cargo" class="w-full h-48 object-cover">
+                    </div>
+                    <h4 class="font-bold text-primary text-sm font-heading">ODC Cargo - Transformer Transportation</h4>
+                </div>
+                <div class="project-item" data-category="construction">
+                    <div class="rounded-lg overflow-hidden img-hover-zoom mb-4 shadow-md border border-gray-200">
+                        <img src="images/Cement Pillars.png" alt="Bridge Construction" class="w-full h-48 object-cover">
+                    </div>
+                    <h4 class="font-bold text-primary text-sm font-heading">Bridge Construction Material Supply</h4>
+                </div>
+                <div class="project-item" data-category="infrastructure">
+                    <div class="rounded-lg overflow-hidden img-hover-zoom mb-4 shadow-md border border-gray-200">
+                        <img src="images/Cement Mixing Machine_.png" alt="Industrial Relocation" class="w-full h-48 object-cover">
+                    </div>
+                    <h4 class="font-bold text-primary text-sm font-heading">Industrial Equipment Relocation</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Split Section: Presence India / Why Choose Us -->
+    <section class="bg-white">
+        <div class="flex flex-col lg:flex-row">
+            
+            <!-- Left: Presence Across India -->
+            <div class="lg:w-1/2 bg-dark text-white p-10 lg:p-20 relative overflow-hidden" data-aos="fade-right">
+                <h2 class="text-3xl font-heading font-bold mb-8 uppercase tracking-wide">PRESENCE ACROSS INDIA</h2>
+                
+                <div class="flex flex-col md:flex-row gap-10">
+                    <ul class="space-y-4 font-medium text-gray-300 w-1/3 z-10">
+                        <li class="flex items-center"><svg class="w-5 h-5 text-secondary mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Mumbai <br><span class="text-xs text-gray-400 ml-8">(Head Office)</span></li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-secondary mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Surendranagar</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-secondary mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Godhra</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-secondary mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Vapi</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-secondary mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Nagpur</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-secondary mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Hyderabad</li>
+                    </ul>
+                    
+                    <!-- 2D SVG Map Implementation Exactly Matching Collage Reference -->
+                    <div class="w-4/5 md:w-3/4 h-full flex items-center justify-center relative mt-10 md:mt-0 z-10" data-aos="zoom-in">
+                        <img src="images/golden_map.png" alt="India Locations" class="w-full h-auto drop-shadow-2xl">
+                    </div>
+                </div>
+                
+                <a href="#" class="btn-primary rounded text-xs py-3 px-8 mt-10 relative z-10 block w-max">VIEW ALL LOCATIONS</a>
+            </div>
+
+            <!-- Right: Why Choose Us -->
+            <div class="lg:w-1/2 p-10 lg:p-20 bg-white" data-aos="fade-left">
+                <h2 class="text-3xl font-heading font-bold text-primary mb-12 uppercase tracking-wide">WHY CHOOSE US</h2>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="flex items-center hover:-translate-y-1 transition">
+                        <div class="w-12 h-12 flex-shrink-0 bg-red-50 rounded flex items-center justify-center mr-4 border border-red-100">
+                            <img src="https://img.icons8.com/ios-filled/50/D72638/truck.png" class="w-6 h-6 opacity-80" alt="Icon">
+                        </div>
+                        <h4 class="font-bold text-sm text-primary">Reliable & Timely Delivery</h4>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="flex items-center hover:-translate-y-1 transition">
+                        <div class="w-12 h-12 flex-shrink-0 bg-red-50 rounded flex items-center justify-center mr-4 border border-red-100">
+                            <img src="https://img.icons8.com/ios-filled/50/D72638/crane.png" class="w-6 h-6 opacity-80" alt="Icon">
+                        </div>
+                        <h4 class="font-bold text-sm text-primary">Modern Fleet & Equipment</h4>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="flex items-center hover:-translate-y-1 transition">
+                        <div class="w-12 h-12 flex-shrink-0 bg-red-50 rounded flex items-center justify-center mr-4 border border-red-100">
+                            <img src="https://img.icons8.com/ios-filled/50/D72638/train.png" class="w-6 h-6 opacity-80" alt="Icon">
+                        </div>
+                        <h4 class="font-bold text-sm text-primary">Railway Logistics Specialist</h4>
+                    </div>
+                    <!-- Feature 4 -->
+                    <div class="flex items-center hover:-translate-y-1 transition">
+                        <div class="w-12 h-12 flex-shrink-0 bg-red-50 rounded flex items-center justify-center mr-4 border border-red-100">
+                            <img src="https://img.icons8.com/ios-filled/50/D72638/cargo-ship.png" class="w-6 h-6 opacity-80" alt="Icon">
+                        </div>
+                        <h4 class="font-bold text-sm text-primary">ODC Transport Experts</h4>
+                    </div>
+                    <!-- Feature 5 -->
+                    <div class="flex items-center hover:-translate-y-1 transition">
+                        <div class="w-12 h-12 flex-shrink-0 bg-red-50 rounded flex items-center justify-center mr-4 border border-red-100">
+                            <img src="https://img.icons8.com/ios-filled/50/D72638/shield.png" class="w-6 h-6 opacity-80" alt="Icon">
+                        </div>
+                        <h4 class="font-bold text-sm text-primary">Safe & Secure Cargo Handling</h4>
+                    </div>
+                    <!-- Feature 6 -->
+                    <div class="flex items-center hover:-translate-y-1 transition">
+                        <div class="w-12 h-12 flex-shrink-0 bg-red-50 rounded flex items-center justify-center mr-4 border border-red-100">
+                            <img src="https://img.icons8.com/ios-filled/50/D72638/map-marker.png" class="w-6 h-6 opacity-80" alt="Icon">
+                        </div>
+                        <h4 class="font-bold text-sm text-primary">Pan India Network</h4>
+                    </div>
+                    <!-- Feature 7 -->
+                    <div class="flex items-center hover:-translate-y-1 transition">
+                        <div class="w-12 h-12 flex-shrink-0 bg-red-50 rounded flex items-center justify-center mr-4 border border-red-100">
+                            <img src="https://img.icons8.com/ios-filled/50/D72638/worker-male.png" class="w-6 h-6 opacity-80" alt="Icon">
+                        </div>
+                        <h4 class="font-bold text-sm text-primary">Experienced Professional Team</h4>
+                    </div>
+                    <!-- Feature 8 -->
+                    <div class="flex items-center hover:-translate-y-1 transition">
+                        <div class="w-12 h-12 flex-shrink-0 bg-red-50 rounded flex items-center justify-center mr-4 border border-red-100">
+                            <img src="https://img.icons8.com/ios-filled/50/D72638/price-tag.png" class="w-6 h-6 opacity-80" alt="Icon">
+                        </div>
+                        <h4 class="font-bold text-sm text-primary">Competitive Pricing</h4>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Get In Touch Section -->
+    <section class="relative bg-gray-100 border-t border-gray-200">
+        <div class="container mx-auto px-4 lg:px-8 py-20 relative z-10 text-center">
+            <h2 class="text-3xl font-heading font-bold text-primary mb-10 uppercase tracking-wide">GET IN TOUCH WITH US</h2>
+            
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden max-w-5xl mx-auto flex flex-col lg:flex-row">
+                <!-- Left Tabs Box -->
+                <div class="lg:w-2/3 bg-dark">
+                    <div class="flex border-b border-gray-700 bg-[#020d20]">
+                        <button class="contact-tab flex-1 py-4 text-xs font-bold text-white bg-secondary uppercase hover:bg-red-700 transition-all duration-300" data-target="pane-details">CONTACT DETAILS</button>
+                        <button class="contact-tab flex-1 py-4 text-xs font-bold text-gray-400 hover:bg-gray-800 hover:text-white uppercase transition-all duration-300" data-target="pane-headoffice">HEAD OFFICE</button>
+                        <button class="contact-tab flex-1 py-4 text-xs font-bold text-gray-400 hover:bg-gray-800 hover:text-white uppercase transition-all duration-300" data-target="pane-branch">BRANCH OFFICES</button>
+                        <button class="contact-tab flex-1 py-4 text-xs font-bold text-gray-400 hover:bg-gray-800 hover:text-white uppercase transition-all duration-300" data-target="pane-map">MAP</button>
+                        <button class="contact-tab flex-1 py-4 text-xs font-bold text-gray-400 hover:bg-gray-800 hover:text-white uppercase transition-all duration-300" data-target="pane-inquiry">SEND INQUIRY</button>
+                    </div>
+                    
+                    <!-- Contact Panes -->
+                    <div id="pane-details" class="contact-pane p-10 text-left flex flex-col md:flex-row gap-8 text-white">
+                        <div class="flex-1">
+                            <div class="flex items-start mb-6">
+                                <svg class="w-5 h-5 text-secondary mr-3 mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                                <div>
+                                    <p class="font-medium text-sm mb-1">9820869247</p>
+                                    <p class="font-medium text-sm mb-1">7738822231</p>
+                                    <p class="font-medium text-sm">8879022249</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-start mb-6">
+                                <svg class="w-5 h-5 text-secondary mr-3 mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                <div>
+                                    <p class="font-medium text-sm mb-1">infrasiddhivinayak@gmail.com</p>
+                                    <p class="font-medium text-sm">duttonline@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-start mb-6">
+                                <svg class="w-5 h-5 text-secondary mr-3 mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <div>
+                                    <p class="font-medium text-sm mb-1">Mon - Sat</p>
+                                    <p class="font-medium text-sm">9:00 AM - 7:00 PM</p>
+                                    <a href="#" class="btn-primary rounded text-xs py-2 px-6 mt-4 inline-block">CALL NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="pane-headoffice" class="contact-pane hidden p-10 text-white font-medium text-sm">
+                        <p class="mb-2 text-secondary font-bold uppercase">Siddhivinayak Infra Head Office</p>
+                        <p class="text-gray-300">Mumbai, Maharashtra, India</p>
+                    </div>
+                    <div id="pane-branch" class="contact-pane hidden p-10 text-white font-medium text-sm">
+                        <p class="text-gray-300">Branch offices located in Surendranagar, Godhra, Vapi, Nagpur, and Hyderabad.</p>
+                    </div>
+                    <div id="pane-map" class="contact-pane hidden p-0 bg-gray-100 h-[400px]">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609951806!2d72.74109995777726!3d19.082197839352932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1714498394462!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div id="pane-inquiry" class="contact-pane hidden p-10 text-white">
+                        <form class="flex flex-col gap-4 max-w-sm">
+                            <input type="text" placeholder="Name" class="p-2 bg-gray-800 border-none rounded text-sm text-white">
+                            <input type="email" placeholder="Email" class="p-2 bg-gray-800 border-none rounded text-sm text-white">
+                            <button type="button" class="btn-primary w-max">SUBMIT</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Right Image side -->
+                <div class="lg:w-1/3">
+                    <img src="images/hero_port.png" alt="Logistics Port" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#03152F] text-gray-300 pt-16 pb-8 border-t border-gray-800">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+                <div class="lg:col-span-2 pr-4">
+                    <img src="assets/logo/logo.png" alt="Logo" class="h-14 mb-6 bg-white p-2 rounded shadow-md">
+                    <p class="text-sm leading-relaxed opacity-70 mb-6">Specialized in Heavy Cargo, Railway Logistics, ODC Transport, Construction Logistics & Industrial Transport Services.</p>
+                    <p class="text-[11px] opacity-50">&copy; 2026 Siddhivinayak <span class="text-[#D72638]">Infra</span>. All Rights Reserved.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-6 uppercase tracking-wider font-heading">QUICK LINKS</h4>
+                    <ul class="space-y-3 text-xs">
+                        <li><a href="#" class="hover:text-secondary transition">Home</a></li>
+                        <li><a href="#" class="hover:text-secondary transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-secondary transition">Services</a></li>
+                        <li><a href="#" class="hover:text-secondary transition">Fleet</a></li>
+                        <li><a href="#" class="hover:text-secondary transition">Projects</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-6 uppercase tracking-wider font-heading">OUR SERVICES</h4>
+                    <ul class="space-y-3 text-xs">
+                        <li><a href="#" class="hover:text-secondary transition">Railway Logistics</a></li>
+                        <li><a href="#" class="hover:text-secondary transition">ODC Transport</a></li>
+                        <li><a href="#" class="hover:text-secondary transition">Heavy Cargo</a></li>
+                        <li><a href="#" class="hover:text-secondary transition">Construction Logistics</a></li>
+                        <li><a href="#" class="hover:text-secondary transition">Crane Services</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-6 uppercase tracking-wider font-heading">CONTACT INFO</h4>
+                    <ul class="space-y-3 text-xs">
+                        <li class="flex items-start">
+                            <svg class="w-4 h-4 text-secondary mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            <div>9820869247 <br> 7738822231 <br> 8879022249</div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-4 h-4 text-secondary mr-2 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            <div>infrasiddhivinayak@gmail.com <br> duttonline@gmail.com</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 pt-6 flex justify-end">
+                <p class="text-[11px] opacity-50">Privacy Policy | Terms & Conditions</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/919820869247" class="fab-whatsapp" target="_blank">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <!-- AOS Script Integration -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/aos-init.js"></script>
+    <script src="js/tabs.js"></script>
+    <!-- Custom Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

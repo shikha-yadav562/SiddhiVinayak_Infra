@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleet | SIDDHIVINAYAK INFRA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { primary: '#082B59', secondary: '#D72638', dark: '#041A3B' }, fontFamily: { sans: ['Poppins', 'sans-serif'], heading: ['Montserrat', 'sans-serif'] } } } }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animation.css">
+</head>
+<body class="text-gray-800 bg-gray-50">
+    
+    <!-- Top Contact Bar -->
+    <div class="top-bar py-2 z-50 relative bg-[#9E1B22]">
+        <div class="container mx-auto px-4 lg:px-8 flex flex-col md:flex-row justify-between items-center text-[13px] font-medium tracking-wide">
+            <div class="flex space-x-6 items-center">
+                <a href="tel:9820869247" class="flex items-center hover:text-gray-200 transition">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg> 
+                    +91 9820869247 / 7738822231 / 8879022249
+                </a>
+                <a href="mailto:infrasiddhivinayak@gmail.com" class="flex items-center hover:text-gray-200 transition">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg> 
+                    infrasiddhivinayak@gmail.com | duttonline@gmail.com
+                </a>
+            </div>
+            <div class="flex space-x-6 items-center mt-2 md:mt-0">
+                <span class="flex items-center">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 
+                    Mon - Sat: 9:00 AM - 7:00 PM
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Navbar -->
+    <nav id="navbar" class="w-full z-40 transition-all duration-400 py-4 bg-white sticky top-0 border-b border-gray-100 shadow-sm">
+        <div class="container mx-auto px-4 lg:px-8 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="assets/logo/logo.png" alt="Siddhivinayak Logistics Solutions" class="h-12">
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="about.html" class="nav-link flex items-center">ABOUT US <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></a>
+                <a href="services.html" class="nav-link flex items-center">SERVICES <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></a>
+                <a href="fleet.html" class="nav-link flex items-center active">FLEET <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></a>
+                <a href="projects.html" class="nav-link">PROJECTS</a>
+                <a href="contact.html" class="nav-link">CONTACT</a>
+                <a href="contact.html" class="btn-primary">GET A QUOTE</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="lg:hidden text-primary hover:text-secondary"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+        </div>
+
+        <!-- Mobile Menu Container (Hidden by default) -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white w-full border-t border-gray-100 absolute top-full left-0 shadow-2xl pb-4 flex-col px-6 py-4 space-y-4">
+            <a href="index.html" class="text-primary font-bold tracking-wide hover:text-secondary transition text-lg border-b border-gray-100 pb-2">HOME</a>
+            <a href="about.html" class="text-primary font-bold tracking-wide hover:text-secondary transition text-lg border-b border-gray-100 pb-2">ABOUT US</a>
+            <a href="services.html" class="text-primary font-bold tracking-wide hover:text-secondary transition text-lg border-b border-gray-100 pb-2">SERVICES</a>
+            <a href="fleet.html" class="text-primary font-bold tracking-wide hover:text-secondary transition text-lg border-b border-gray-100 pb-2">FLEET</a>
+            <a href="projects.html" class="text-primary font-bold tracking-wide hover:text-secondary transition text-lg border-b border-gray-100 pb-2">PROJECTS</a>
+            <a href="contact.html" class="text-primary font-bold tracking-wide hover:text-secondary transition text-lg border-b border-gray-100 pb-2">CONTACT</a>
+            <a href="contact.html" class="bg-secondary text-white text-center rounded py-3 font-bold uppercase mt-2">GET A QUOTE</a>
+        </div>
+    </nav>
+
+    <header class="pt-8 pb-8 bg-[#03152F] border-b-4 border-secondary">
+        <div class="container mx-auto px-4 lg:px-8 text-center text-white fade-up visible">
+            <h1 class="text-3xl md:text-4xl font-heading font-black mb-2 tracking-tight uppercase drop-shadow-lg">Our Fleet</h1>
+            <p class="text-base text-gray-300 font-medium">Over 100+ Heavy Vehicles & Equipment</p>
+        </div>
+    </header>
+
+    <section class="py-32 bg-white relative">
+        <div class="container mx-auto px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                
+                <!-- Fleet Items mapped to local images -->
+                <div class="bg-gray-50 border border-gray-100 rounded-lg overflow-hidden hover-zoom card-lift shadow-lg group fade-up">
+                    <div class="h-56 relative overflow-hidden">
+                        <img src="images/Trucks.png" alt="14 ft Truck" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-secondary text-white px-3 py-1 text-xs font-bold rounded uppercase tracking-wider shadow-md">4 MT Capacity</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-heading font-bold text-primary mb-2">14 ft Truck</h3>
+                        <p class="text-gray-600 text-sm mb-4">Ideal for medium loads and construction material distribution.</p>
+                        <a href="contact.html" class="btn-primary inline-block w-full text-center py-3 text-sm rounded font-bold uppercase tracking-wider">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 border border-gray-100 rounded-lg overflow-hidden hover-zoom card-lift shadow-lg group fade-up">
+                    <div class="h-56 relative overflow-hidden">
+                        <img src="images/Tauras Trucks.png" alt="19 ft Truck" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-secondary text-white px-3 py-1 text-xs font-bold rounded uppercase tracking-wider shadow-md">7 MT Capacity</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-heading font-bold text-primary mb-2">19 ft Truck</h3>
+                        <p class="text-gray-600 text-sm mb-4">Versatile truck for industrial parts and regional deliveries.</p>
+                        <a href="contact.html" class="btn-primary inline-block w-full text-center py-3 text-sm rounded font-bold uppercase tracking-wider">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 border border-gray-100 rounded-lg overflow-hidden hover-zoom card-lift shadow-lg group fade-up">
+                    <div class="h-56 relative overflow-hidden">
+                        <img src="images/Open Truck (20-30 ft).png" alt="20 ft Trailer" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-secondary text-white px-3 py-1 text-xs font-bold rounded uppercase tracking-wider shadow-md">20 MT Capacity</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-heading font-bold text-primary mb-2">20 ft Trailer</h3>
+                        <p class="text-gray-600 text-sm mb-4">Flatbed trailer for standard container transport and heavy parts.</p>
+                        <a href="contact.html" class="btn-primary inline-block w-full text-center py-3 text-sm rounded font-bold uppercase tracking-wider">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 border border-gray-100 rounded-lg overflow-hidden hover-zoom card-lift shadow-lg group fade-up">
+                    <div class="h-56 relative overflow-hidden">
+                        <img src="images/ODC TRUCKS_.png" alt="ODC Trailer" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-secondary text-white px-3 py-1 text-xs font-bold rounded uppercase tracking-wider shadow-md">Multi Axle</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-heading font-bold text-primary mb-2">ODC Trailer</h3>
+                        <p class="text-gray-600 text-sm mb-4">Specially designed for Over Dimensional Cargo, transformers, and girders.</p>
+                        <a href="contact.html" class="btn-primary inline-block w-full text-center py-3 text-sm rounded font-bold uppercase tracking-wider">Book Now</a>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 border border-gray-100 rounded-lg overflow-hidden hover-zoom card-lift shadow-lg group fade-up">
+                    <div class="h-56 relative overflow-hidden">
+                        <img src="images/Cranes.png" alt="Hydra" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-secondary text-white px-3 py-1 text-xs font-bold rounded uppercase tracking-wider shadow-md">15-30 MT Capacity</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-heading font-bold text-primary mb-2">Hydra Crane</h3>
+                        <p class="text-gray-600 text-sm mb-4">Mobile cranes essential for loading/unloading heavy materials on site.</p>
+                        <a href="contact.html" class="btn-primary inline-block w-full text-center py-3 text-sm rounded font-bold uppercase tracking-wider">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 border border-gray-100 rounded-lg overflow-hidden hover-zoom card-lift shadow-lg group fade-up">
+                    <div class="h-56 relative overflow-hidden">
+                        <img src="images/Cement Mixing Machine_.png" alt="Excavator" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-secondary text-white px-3 py-1 text-xs font-bold rounded uppercase tracking-wider shadow-md">Earth Moving</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-heading font-bold text-primary mb-2">Excavator</h3>
+                        <p class="text-gray-600 text-sm mb-4">Heavy-duty excavators for massive infrastructure and rail projects.</p>
+                        <a href="contact.html" class="btn-primary inline-block w-full text-center py-3 text-sm rounded font-bold uppercase tracking-wider">Book Now</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animation.js"></script>
+</body>
+</html>

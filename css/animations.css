@@ -1,0 +1,71 @@
+/* animation.css - Awwwards Level Animations */
+
+/* Scroll Reveal Animations */
+.fade-up { opacity: 0; transform: translateY(60px); transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1); }
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+
+.slide-in-left { opacity: 0; transform: translateX(-80px); transition: all 1s cubic-bezier(0.16, 1, 0.3, 1); }
+.slide-in-left.visible { opacity: 1; transform: translateX(0); }
+
+.slide-in-right { opacity: 0; transform: translateX(80px); transition: all 1s cubic-bezier(0.16, 1, 0.3, 1); }
+.slide-in-right.visible { opacity: 1; transform: translateX(0); }
+
+.zoom-in { opacity: 0; transform: scale(0.95); transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1); }
+.zoom-in.visible { opacity: 1; transform: scale(1); }
+
+/* Hover Micro-animations */
+.hover-zoom { overflow: hidden; }
+.hover-zoom img { transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1); will-change: transform; }
+.hover-zoom:hover img { transform: scale(1.1); }
+
+.card-lift { transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+.card-lift:hover { transform: translateY(-15px); box-shadow: 0 30px 60px -15px rgba(8, 43, 89, 0.2); }
+
+/* 3D Map Specific Animations */
+.marker-pulse {
+  position: absolute; top: -14px; left: -14px; width: 40px; height: 40px;
+  border-radius: 50%; border: 2px solid var(--secondary);
+  animation: pulse-ring 2.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+@keyframes pulse-ring {
+  0% { transform: scale(0.3); opacity: 1; border-width: 3px; }
+  100% { transform: scale(2.5); opacity: 0; border-width: 0; }
+}
+
+.map-line {
+  stroke-dasharray: 1000; stroke-dashoffset: 1000;
+  animation: drawLine 4s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
+}
+@keyframes drawLine {
+  to { stroke-dashoffset: 0; }
+}
+
+.floating { animation: float 8s ease-in-out infinite; }
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-30px) rotate(2deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.particles-float { animation: particles 20s linear infinite; }
+@keyframes particles {
+  from { transform: translateY(100vh); }
+  to { transform: translateY(-100vh); }
+}
+
+/* Typing Effect */
+.typing {
+  overflow: hidden; white-space: nowrap; border-right: 2px solid var(--secondary);
+  animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+}
+@keyframes typing { from { width: 0 } to { width: 100% } }
+@keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: var(--secondary); } }
+
+/* Form Validation */
+.shake { animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both; }
+@keyframes shake {
+  10%, 90% { transform: translate3d(-1px, 0, 0); }
+  20%, 80% { transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+  40%, 60% { transform: translate3d(4px, 0, 0); }
+}
